@@ -1,0 +1,24 @@
+@use 'nav';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Futura PT', sans-serif;
+}
+
+.color-orange {
+    color: #FF764D !important;
+
+}
+
+.color-blue {
+    color: blue !important;
+}
