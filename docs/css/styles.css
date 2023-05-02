@@ -112,6 +112,51 @@
   z-index: 2;
 }
 
+.video-section {
+  position: relative;
+}
+.video-section__img {
+  position: relative;
+  background-image: url("https://ableton-production.imgix.net/about/poster-juanpe.jpg?auto=compress%2Cformat&w=1462%201462w");
+  background-size: cover;
+  padding-top: 56.25%;
+  background-color: gray;
+}
+.video-section__circle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-section__circle-container__circle {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-section__polygon {
+  width: 30%;
+  position: relative;
+  left: 2px;
+}
+.video-section p {
+  padding: 10px;
+}
+
+@media (max-width: 800px) {
+  .video-section__circle-container__circle {
+    width: 3rem;
+    height: 3rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
