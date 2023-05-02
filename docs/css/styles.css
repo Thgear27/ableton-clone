@@ -93,10 +93,11 @@
   background-image: url("https://ableton-production.imgix.net/about/photo-2.jpg?dpr=2.00&fit=crop&h=390&ixjsv=1.1.3&q=50&w=520");
   background-position: 50% 50%;
   background-size: cover;
-  height: 25vw;
-  width: 33vw;
+  height: 24vw;
+  width: 31vw;
   max-width: 570px;
   max-height: 433px;
+  margin-left: 100px;
   position: relative;
   z-index: 2;
 }
@@ -104,8 +105,8 @@
   background-image: url("https://ableton-production.imgix.net/about/photo-1.jpg?dpr=2.00&fit=crop&h=667&ixjsv=1.1.3&q=50&w=667");
   background-position: 50% 50%;
   background-size: cover;
-  height: 41vw;
-  width: 41vw;
+  height: 40vw;
+  width: 40vw;
   max-width: 710px;
   max-height: 710px;
   position: relative;
