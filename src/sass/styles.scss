@@ -1,17 +1,32 @@
 @use 'nav';
+@use 'hero';
+@use 'section';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+
+    // background-color: #00800011;
+    // outline: 2px solid green;
 }
 
+body,
 html {
     box-sizing: border-box;
+    font-family: 'Futura PT', sans-serif;
+    background-color: #F3F3F3;
 }
 
-body {
-    font-family: 'Futura PT', sans-serif;
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-container {
+    background-color: white;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .color-orange {
