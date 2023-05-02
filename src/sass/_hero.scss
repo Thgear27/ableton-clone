@@ -19,3 +19,11 @@
         top: 43%;
     }
 }
+
+@media (max-width: 600px) {
+    .hero {
+        &__logo {
+            width: 200px;
+        }
+    }
+}

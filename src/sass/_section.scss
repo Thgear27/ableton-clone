@@ -1,8 +1,17 @@
 .section-container {
     max-width: 900px;
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
 }
+
+@media (max-width: 1000px) {
+    .section-container {
+        max-width: 900px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 
 .p-section {
     padding: 114px 0px;
