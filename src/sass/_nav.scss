@@ -66,11 +66,12 @@
                 position: relative;
                 margin-left: .5rem;
                 margin-top: .1rem;
-                transition: fill 0.3 ease-in-out;
+                transition: all 0.3s ease-in-out;
             }
             
             &__svg[show-menu="true"] {
                 fill: white;
+                transform: rotate(180deg);
             }
 
         }
