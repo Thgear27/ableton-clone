@@ -55,10 +55,11 @@
     position: relative;
     margin-left: 0.5rem;
     margin-top: 0.1rem;
-    transition: fill 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .nav__mobile-menu__svg[show-menu=true] {
     fill: white;
+    transform: rotate(180deg);
   }
   .nav__mobile-menu[show-menu=true] {
     color: white;
@@ -365,6 +366,7 @@
   max-width: unset;
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 8vw;
   display: flex;
 }
 .section-4__img {
@@ -390,13 +392,6 @@
   display: flex;
   align-items: center;
 }
-.section-4__svg {
-  margin-left: 0.5rem;
-  height: 0.9rem;
-  fill: blue;
-  position: relative;
-  top: 2px;
-}
 @media (max-width: 1000px) {
   .section-4 {
     flex-direction: column;
@@ -415,6 +410,97 @@
     height: 3rem;
   }
 }
+.footer {
+  width: 80%;
+  padding: 92px 0;
+  margin: 0 auto;
+}
+.footer select {
+  background-color: #F3F3F3;
+  padding: 0.8em;
+  padding-right: 5em;
+  border: none;
+  margin-top: 10px;
+}
+.footer a,
+.footer li,
+.footer p,
+.footer h3 {
+  line-height: 1.8;
+}
+.footer__logo {
+  width: 188px;
+  margin-bottom: 48px;
+}
+.footer .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.footer .footer-grid__item {
+  margin-bottom: 50px;
+}
+@media (max-width: 1000px) {
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer__links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__links a {
+  font-weight: 500;
+}
+.footer__links__logo-container {
+  margin-top: 3.75rem;
+}
+
+@media (min-width: 1000px) {
+  .footer__links ul {
+    flex-direction: row;
+    gap: 25px;
+  }
+  .footer__links__logo-container {
+    margin-top: 0;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.footer-form {
+  display: flex;
+  margin-top: 10px;
+}
+.footer-form__input-email {
+  background-color: #F3F3F3;
+  width: 90%;
+  padding: 0.8em;
+  border: none;
+  padding: 0.8em;
+}
+.footer-form__signup-btn {
+  width: 100px;
+  padding: 0.8em;
+  border: none;
+  padding: 0.8em;
+  font-weight: 500;
+  background-color: blue;
+  color: white;
+  margin-left: 3px;
+}
+
+.socialmedia-container {
+  margin-top: 10px;
+}
+.socialmedia-container svg {
+  background-color: black;
+  width: 50px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -431,6 +517,10 @@ html {
 a {
   text-decoration: none;
   color: black;
+}
+
+ul {
+  list-style: none;
 }
 
 h1 {
@@ -454,4 +544,11 @@ h1 {
 
 .color-blue {
   color: blue !important;
+}
+
+.angle-right {
+  font-size: 0.8em;
+  margin-left: 0.3125em;
+  position: relative;
+  top: 0.1em;
 }

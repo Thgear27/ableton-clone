@@ -1,6 +1,7 @@
 @use 'nav';
 @use 'hero';
 @use 'section';
+@use 'footer';
 
 * {
     margin: 0;
@@ -21,6 +22,10 @@ html {
 a {
     text-decoration: none;
     color: black;
+}
+
+ul {
+    list-style: none;
 }
 
 h1 {
@@ -46,4 +51,11 @@ h1 {
 
 .color-blue {
     color: blue !important;
+}
+
+.angle-right {
+    font-size: 0.8em;
+    margin-left: 0.3125em;
+    position: relative;
+    top: 0.1em;
 }

@@ -81,7 +81,7 @@
         max-height: 710px;
 
         position: relative;
-        z-index: 2;
+        z-index: 2
     }
 }
 
@@ -284,6 +284,7 @@
     max-width: unset;
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 8vw;
 
     display: flex;
 
@@ -315,14 +316,6 @@
                 align-items: center;
             }
         }
-    }
-
-    &__svg {
-        margin-left: 0.5rem;
-        height: 0.9rem;
-        fill: blue;
-        position: relative;
-        top: 2px
     }
 
     @media (max-width: 1000px) {
