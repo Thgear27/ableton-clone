@@ -19,7 +19,7 @@
         <nav class="nav">
 
             <div class="nav__logo-li">
-                <svg class="nav__ul__logo" role="img" aria-labelledby="logo" class="main-nav__logo__image"
+                <svg show-menu="true" class="nav__ul__logo" role="img" aria-labelledby="logo" 
                     xmlns="http://www.w3.org/2000/svg" width="45" height="21" viewBox="0 0 45 21">
                     <title id="logo">Ableton Homepage</title>
                     <path
@@ -27,8 +27,15 @@
                     </path>
                 </svg>
             </div>
-            <div class="nav__mobile-menu">MENU</div>
-            <ul class="nav__ul main-nav-ul main-nav">
+            <div show-menu="true" class="nav__mobile-menu">
+                MENU
+                <svg show-menu="true" class="nav__mobile-menu__svg" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                </svg>
+            </div>
+            <ul show-menu="true" class="nav__ul main-nav-ul main-nav">
                 <li><a href="#">Live</a></li>
                 <li><a href="#">Push</a></li>
                 <li><a href="#">Link</a></li>
@@ -42,7 +49,7 @@
             </ul>
         </nav>
         <div class="separator"></div>
-        <nav class="nav">
+        <nav class="nav second-nav">
             <ul class="nav__ul">
                 <li><a class="color-orange" href="#">About</a></li>
                 <li><a href="#">Jobs</a></li>
@@ -230,6 +237,7 @@
             footer en proceso
         </footer>
     </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>

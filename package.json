@@ -7,8 +7,10 @@
   "scripts": {
     "build:sass": "sass  --no-source-map src/sass:docs/css",
     "copy:html": "copyfiles -u 1 ./src/*.html docs",
+    "copy:js": "copyfiles -u 1 ./src/*.js docs",
     "copy": "npm-run-all --parallel copy:*",
     "watch:html": "onchange 'src/*.html' -- npm run copy:html",
+    "watch:js": "onchange 'src/*.js' -- npm run copy:js",
     "watch:sass": "sass  --no-source-map --watch src/sass:docs/css",
     "watch": "npm-run-all --parallel watch:*",
     "serve": "browser-sync start --server docs --files docs",

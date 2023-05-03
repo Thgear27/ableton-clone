@@ -4,8 +4,10 @@
 .nav__mobile-menu {
   display: none;
 }
-.nav__ul {
+.nav__ul.main-nav-ul {
   padding-left: 90px;
+}
+.nav__ul {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -43,33 +45,59 @@
   .nav__mobile-menu {
     display: inherit;
     position: relative;
-    z-index: 3;
+    z-index: 4;
     font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  .nav__mobile-menu__svg {
+    fill: black;
+    height: 1rem;
+    position: relative;
+    margin-left: 0.5rem;
+    margin-top: 0.1rem;
+    transition: fill 0.3 ease-in-out;
+  }
+  .nav__mobile-menu__svg[show-menu=true] {
+    fill: white;
+  }
+  .nav__mobile-menu[show-menu=true] {
+    color: white;
+  }
+  .nav__ul {
+    gap: 10px;
+  }
+  .nav__ul__logo {
+    transition: fill 0.3s ease-in-out;
+  }
+  .nav__ul__logo[show-menu=true] {
+    fill: white !important;
   }
   .nav__ul.main-nav {
     flex-direction: column;
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 3;
+    gap: 30px;
     background-color: blue;
     width: 100%;
-    padding: 100px;
+    padding: 60px 30px;
     top: 0;
     left: 0;
     align-items: start;
-    display: none;
+    transform: translateY(-101%);
+    transition: transform 0.3s ease-in-out;
   }
-  .nav__logo-li {
-    display: flex;
-    position: relative;
-    align-items: center;
-    margin-right: 15px;
-    z-index: 3;
+  .nav__ul.main-nav a {
+    color: white !important;
   }
-  .nav li {
+  .nav__ul.main-nav li {
     margin-left: 0;
   }
-  .nav a {
-    color: white !important;
+  .nav__ul.main-nav-ul[show-menu=true] {
+    transform: translateY(0) !important;
+  }
+  .nav__logo-li {
+    position: relative;
+    z-index: 4;
   }
 }
 .hero {
