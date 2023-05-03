@@ -62,6 +62,8 @@
   }
   .nav__mobile-menu[show-menu=true] {
     color: white;
+    position: fixed;
+    left: 130px;
   }
   .nav__ul {
     gap: 10px;
@@ -71,6 +73,8 @@
   }
   .nav__ul__logo[show-menu=true] {
     fill: white !important;
+    position: fixed;
+    top: 20px;
   }
   .nav__ul.main-nav {
     flex-direction: column;

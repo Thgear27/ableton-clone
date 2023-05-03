@@ -77,6 +77,8 @@
 
         &__mobile-menu[show-menu="true"] {
             color: white;
+            position: fixed;
+            left: 130px;
         }
 
         &__ul {
@@ -87,6 +89,8 @@
 
             &__logo[show-menu="true"] {
                 fill: white !important;
+                position: fixed;
+                top: 20px
             }
         }
 
