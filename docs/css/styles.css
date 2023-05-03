@@ -369,6 +369,9 @@
   .section-4 {
     flex-direction: column;
   }
+  .section-4__info-container {
+    padding: 30px;
+  }
   .section-4__img {
     min-height: 50vw;
   }
@@ -402,6 +405,11 @@ h1 {
   line-height: 1.5;
 }
 
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+}
 .main-container {
   background-color: white;
   max-width: 1600px;

@@ -326,6 +326,10 @@
     }
 
     @media (max-width: 1000px) {
+        &__info-container {
+            padding: 30px;
+        }
+
         &__img {
             min-height: 50vw;
         }
